@@ -2,7 +2,7 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
-  base: '/budget-tracker-app/',
+  base: process.env.PAGES_BASE ?? '/budget-tracker-app/',
   plugins: [react()],
   test: {
     environment: 'jsdom',

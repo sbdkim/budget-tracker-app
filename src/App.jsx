@@ -91,15 +91,15 @@ function App() {
     <div className="app-shell">
       <header className="hero-panel">
         <div>
-          <p className="eyebrow">Personal Finance</p>
-          <h1>Budget Tracker App</h1>
+          <p className="eyebrow">Northline Finance</p>
+          <h1>Track Budget</h1>
           <p className="hero-copy">
             Track income and expenses, review your spending habits, and keep a
-            simple monthly money snapshot right in the browser.
+            clear monthly money snapshot right in the browser.
           </p>
         </div>
         <div className="hero-note">
-          <p className="hero-note-label">Storage</p>
+          <p className="hero-note-label">Local-first</p>
           <strong>{storageKey}</strong>
           <p>Your data stays in this browser using local storage.</p>
         </div>

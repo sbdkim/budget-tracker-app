@@ -1,6 +1,6 @@
-# Budget Tracker App
+# Track Budget
 
-A beginner-friendly React web app for tracking income and expenses with simple charts and local browser storage.
+A local-first React budget dashboard for tracking income, expenses, and category trends with the Northline visual system.
 
 ## Live Demo
 Ready for GitHub Pages deployment from this repository using the included workflow in `.github/workflows/deploy-pages.yml`.
@@ -22,21 +22,21 @@ Ready for GitHub Pages deployment from this repository using the included workfl
 
 ## Setup / Run Locally
 ```powershell
-cd D:\Projects\github-projects\budget-tracker-app
+cd D:\Projects\projects\budget-tracker-app
 npm install
 npm run dev
 ```
 
 ## Tests
 ```powershell
-cd D:\Projects\github-projects\budget-tracker-app
+cd D:\Projects\projects\budget-tracker-app
 npm run test:run
 ```
 
 ## Deployment Notes
-- The Vite base path is configured for a GitHub Pages repo named `budget-tracker-app`.
+- The Vite base path is configurable via `PAGES_BASE` and currently defaults to the existing repo slug for safe deployment.
 - The GitHub Actions workflow builds `dist/` and deploys it to GitHub Pages on pushes to `main`.
-- If the repository name changes, update the `base` value in `vite.config.js` and the favicon path in `index.html`.
+- When the repository slug is renamed to `track-budget`, set `PAGES_BASE=/track-budget/` in the deploy environment before switching the remote URL.
 
 ## Architecture
 The app uses a single `transactions` state as its source of truth, derives summaries and charts from filtered data, and persists changes to `localStorage` under `budget-tracker:v1`.

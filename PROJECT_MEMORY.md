@@ -2,8 +2,8 @@
 
 ## Product
 
-- Budget Tracker App is a beginner-friendly React project built for GitHub Pages.
-- The app tracks income and expenses, stores data locally in the browser, and visualizes habits with simple charts.
+- Track Budget is a local-first React project built for GitHub Pages.
+- The app tracks income and expenses, stores data locally in the browser, and visualizes habits with simple charts under the Northline suite branding.
 
 ## Current Decisions
 
@@ -11,6 +11,7 @@
 - Persistence: browser `localStorage` under `budget-tracker:v1`.
 - Charts: `Recharts` for category and monthly summaries.
 - Scope: income + expense tracking, CRUD, filters, summary cards, and responsive layout.
+- Public branding: page title and primary UI label use `Track Budget | Northline`, while the GitHub repo slug remains `budget-tracker-app` until the rename pass.
 
 ## Implementation Notes
 
