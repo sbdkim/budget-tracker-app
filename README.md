@@ -22,21 +22,22 @@ Ready for GitHub Pages deployment from this repository using the included workfl
 
 ## Setup / Run Locally
 ```powershell
-cd D:\Projects\projects\budget-tracker-app
+cd <repo-folder>
 npm install
 npm run dev
 ```
 
 ## Tests
 ```powershell
-cd D:\Projects\projects\budget-tracker-app
+cd <repo-folder>
 npm run test:run
 ```
 
 ## Deployment Notes
 - The Vite base path is configurable via `PAGES_BASE` and currently defaults to the existing repo slug for safe deployment.
 - The GitHub Actions workflow builds `dist/` and deploys it to GitHub Pages on pushes to `main`.
-- When the repository slug is renamed to `track-budget`, set `PAGES_BASE=/track-budget/` in the deploy environment before switching the remote URL.
+- The live Pages path is `https://sbdkim.github.io/track-budget/`.
+- GitHub Pages builds should use `PAGES_BASE=/track-budget/`.
 
 ## Architecture
 The app uses a single `transactions` state as its source of truth, derives summaries and charts from filtered data, and persists changes to `localStorage` under `budget-tracker:v1`.

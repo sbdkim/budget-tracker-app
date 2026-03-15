@@ -11,7 +11,7 @@
 - Persistence: browser `localStorage` under `budget-tracker:v1`.
 - Charts: `Recharts` for category and monthly summaries.
 - Scope: income + expense tracking, CRUD, filters, summary cards, and responsive layout.
-- Public branding: page title and primary UI label use `Track Budget | Northline`, while the GitHub repo slug remains `budget-tracker-app` until the rename pass.
+- Public branding: page title and primary UI label use `Track Budget | Northline`, and the GitHub repo slug target is `track-budget`.
 
 ## Implementation Notes
 
