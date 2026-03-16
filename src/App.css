@@ -215,14 +215,14 @@ select:hover {
 input:focus-visible,
 select:focus-visible,
 button:focus-visible {
-  outline: 3px solid color-mix(in srgb, var(--color-brand-accent) 48%, white);
+  outline: 3px solid color-mix(in srgb, var(--color-brand-accent) 36%, transparent);
   outline-offset: 2px;
 }
 
 input:focus-visible,
 select:focus-visible {
   border-color: var(--color-brand-primary);
-  box-shadow: 0 0 0 4px color-mix(in srgb, var(--color-brand-primary) 14%, white);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--color-brand-primary) 16%, transparent);
 }
 
 .primary-button,
@@ -272,7 +272,7 @@ select:focus-visible {
 .empty-state-card {
   border-radius: calc(var(--radius-lg) + var(--space-1));
   border: 1px solid var(--color-border-subtle);
-  background: color-mix(in srgb, var(--color-surface-sunken) 72%, white);
+  background: color-mix(in srgb, var(--color-surface-sunken) 72%, var(--color-surface-raised));
   padding: var(--space-4);
 }
 
@@ -282,7 +282,7 @@ select:focus-visible {
 
 .inline-feedback.error {
   border-color: color-mix(in srgb, var(--color-status-error) 30%, var(--color-border-default));
-  background: color-mix(in srgb, var(--color-status-error) 7%, white);
+  background: color-mix(in srgb, var(--color-status-error) 10%, var(--color-surface-raised));
 }
 
 .feedback-title,
@@ -383,11 +383,11 @@ select:focus-visible {
 }
 
 .pill.income {
-  background: color-mix(in srgb, var(--color-brand-secondary) 16%, white);
+  background: color-mix(in srgb, var(--color-brand-secondary) 16%, var(--color-surface-raised));
 }
 
 .pill.expense {
-  background: color-mix(in srgb, var(--color-brand-accent) 16%, white);
+  background: color-mix(in srgb, var(--color-brand-accent) 16%, var(--color-surface-raised));
 }
 
 .transaction-actions {
